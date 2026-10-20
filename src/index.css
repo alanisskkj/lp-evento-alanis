@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+--color-primaria: #5b21b6;
+--color-destaque: #f97316;
+--color-fundo: #fff7ed;
+}
+
+html {
+scroll-behavior: smooth;
+}
