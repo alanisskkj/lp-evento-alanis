@@ -1,4 +1,4 @@
-import fotoFestival from "./images/FotoFestival.avif"
+import fotoFestival from "../assets/FotoFestival.avif"
 
 function Hero() {
     return (
