@@ -2,10 +2,38 @@
 
 @theme {
 --color-primaria: #5b21b6;
---color-destaque: #f97316;
+--color-destaque: #9a3412;
 --color-fundo: #fff7ed;
 }
 
 html {
 scroll-behavior: smooth;
+}
+
+:focus-visible {
+outline: 3px solid #ffffff;
+outline-offset: 2px;
+box-shadow: 0 0 0 6px #111111;
+}
+
+.skip-link {
+position: absolute;
+z-index: 50;
+top: 0.75rem;
+left: 0.75rem;
+transform: translateY(-200%);
+background: #ffffff;
+color: #111111;
+padding: 0.75rem 1rem;
+font-weight: 700;
+}
+
+.skip-link:focus {
+transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+html {
+scroll-behavior: auto;
+}
 }

@@ -4,19 +4,24 @@ import Sobre from './components/Sobre'
 import Programacao from './components/Programacao'
 import Atracoes from './components/Atracoes'
 import Newsletter from './components/Inscricao'
+import PerguntasFrequentes from './components/PerguntasFrequentes'
 import Rodape from './components/Rodape'
 
 function App() {
   return (
-    <main>
+    <>
+      <a className="skip-link" href="#conteudo">Pular para o conteúdo</a>
       <Cabecalho />
-      <Hero />
-      <Sobre />
-      <Programacao />
-      <Atracoes />
-      <Newsletter />
+      <main id="conteudo" tabIndex="-1">
+        <Hero />
+        <Sobre />
+        <Programacao />
+        <Atracoes />
+        <PerguntasFrequentes />
+        <Newsletter />
+      </main>
       <Rodape />
-    </main>
+    </>
   )
 }
 export default App
