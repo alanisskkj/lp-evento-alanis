@@ -2,6 +2,7 @@ import Cabecalho from './components/Cabecalho'
 import Hero from './components/Hero'
 import Sobre from './components/Sobre'
 import Programacao from './components/Programacao'
+import Grafico from './components/Grafico'
 import Atracoes from './components/Atracoes'
 import Newsletter from './components/Inscricao'
 import PerguntasFrequentes from './components/PerguntasFrequentes'
@@ -18,6 +19,7 @@ function App() {
         <Programacao />
         <Atracoes />
         <PerguntasFrequentes />
+        <Grafico />
         <Newsletter />
       </main>
       <Rodape />

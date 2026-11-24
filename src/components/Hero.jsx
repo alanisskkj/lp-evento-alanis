@@ -1,4 +1,5 @@
 import fotoFestival from "../assets/FotoFestival.avif"
+import BotaoLembrete from "./BotaoLembrete"
 
 function Hero() {
     return (
@@ -27,6 +28,7 @@ function Hero() {
                 >
                     Confira as atrações
                 </a>
+                <BotaoLembrete />
             </div>
         </section>
     )
