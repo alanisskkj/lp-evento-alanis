@@ -32,7 +32,7 @@ O projeto está publicado na **Vercel** e pode ser acessado pelo link abaixo:
 | Categoria         | Nota |
 |-------------------|------|
 | ⚡ Performance     | 100  |
-| ♿ Acessibilidade  | 100  |
+| ♿ Acessibilidade  | 96  |
 | ✅ Boas Práticas   | 100  |
 
 > Auditado via [PageSpeed Insights](https://pagespeed.web.dev/) / Chrome Lighthouse sobre a URL de produção.
