@@ -25,7 +25,7 @@ function TabelaSetores({ onSelecionarSetor }) {
       <div className="mx-auto max-w-7xl">
         <div className="mb-8 flex flex-col justify-between gap-4 border-b border-borda-clara pb-6 dark:border-borda-escura md:flex-row md:items-end">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota">
+            <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota-label-dark">
               Passaportes e Lotes
             </p>
             <h2
@@ -142,7 +142,7 @@ function TabelaSetores({ onSelecionarSetor }) {
                         className={`w-full border px-4 py-2.5 text-xs font-bold uppercase tracking-wider transition-colors ${
                           esgotado
                             ? 'cursor-not-allowed border-borda-clara bg-areia text-grafite-suave line-through dark:border-borda-escura dark:bg-chumbo dark:text-offwhite-suave'
-                            : 'border-terracota bg-terracota text-grafite hover:border-grafite hover:bg-grafite hover:text-papel dark:hover:border-offwhite dark:hover:bg-offwhite dark:hover:text-carvao'
+                            : 'border-terracota bg-terracota text-papel hover:border-grafite hover:bg-grafite dark:hover:border-offwhite dark:hover:bg-offwhite dark:hover:text-carvao'
                         }`}
                       >
                         {esgotado ? 'Esgotado' : `Selecionar ${setor.nome}`}

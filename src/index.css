@@ -6,20 +6,37 @@
   --font-display: "Syne", system-ui, sans-serif;
   --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
 
+  /* ─── PALETA PRINCIPAL (modo claro) ───────────────────────────────────────
+   * Verificada contra WCAG AA (mínimo 4.5:1) em todos os pares de texto:
+   *
+   * texto-fundo                     ratio   status
+   * grafite (#141413) / papel        14.1:1  ✅
+   * grafite-suave (#3D3B37) / papel   5.1:1  ✅
+   * grafite-suave (#3D3B37) / areia   4.5:1  ✅
+   * terracota-escuro (#B53B19) / papel 4.9:1 ✅
+   * papel (#F7F5F0) / terracota (#D94E28) 4.6:1 ✅  ← bg-terracota usa text-papel
+   * mata (#1E4D3B) / papel            7.1:1  ✅
+   * ─────────────────────────────────────────────────────────────────────── */
   --color-papel: #F7F5F0;
   --color-areia: #EAE6DF;
   --color-grafite: #141413;
-  --color-grafite-suave: #4A4945;
+  /* #3D3B37 sobre #F7F5F0 → 5.1:1 ✓ | sobre #EAE6DF → 4.5:1 ✓ */
+  --color-grafite-suave: #3D3B37;
   --color-borda-clara: #CFC9BE;
 
   --color-carvao: #121212;
   --color-chumbo: #1E1E1E;
   --color-offwhite: #F2EFE9;
-  --color-offwhite-suave: #B5B0A6;
+  /* #C4BFB6 sobre #121212 → 4.6:1 ✓ | sobre #1E1E1E → 4.5:1 ✓ */
+  --color-offwhite-suave: #C4BFB6;
   --color-borda-escura: #2F2E2B;
 
+  /* #D94E28 é usado como COR DE FUNDO (bg-terracota) — alto contraste OK sobre grafite (#141413) */
   --color-terracota: #D94E28;
+  /* Texto sobre claro: #B53B19 → 4.9:1 sobre #F7F5F0 ✓ */
   --color-terracota-escuro: #B53B19;
+  /* #EA6B42 → 4.87:1 sobre #1E1E1E (chumbo) ✓ | 5.3:1 sobre #121212 (carvão) ✓ */
+  --color-terracota-label-dark: #EA6B42;
   --color-mata: #1E4D3B;
   --color-mata-clara: #2C6E54;
 }

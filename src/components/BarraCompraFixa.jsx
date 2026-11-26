@@ -30,7 +30,7 @@ function BarraCompraFixa({ onAbrirCheckout }) {
           <button
             type="button"
             onClick={() => onAbrirCheckout('pista')}
-            className="border border-terracota bg-terracota px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-grafite transition-colors hover:border-grafite hover:bg-grafite hover:text-papel dark:hover:border-offwhite dark:hover:bg-offwhite dark:hover:text-carvao sm:px-6"
+            className="border border-terracota bg-terracota px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-papel transition-colors hover:border-grafite hover:bg-grafite dark:hover:border-offwhite dark:hover:bg-offwhite dark:hover:text-carvao sm:px-6"
           >
             Comprar Ingressos
           </button>

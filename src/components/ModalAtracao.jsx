@@ -98,7 +98,7 @@ function ModalAtracao({ atracao, onFechar }) {
       <div className="w-full max-w-xl border border-borda-clara bg-papel p-6 text-grafite dark:border-borda-escura dark:bg-carvao dark:text-offwhite sm:p-8">
         <div className="flex items-start justify-between gap-4 border-b border-borda-clara pb-4 dark:border-borda-escura">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota">
+            <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota-label-dark">
               {atracao.estilo} · {atracao.cidade}
             </p>
             <h3
@@ -175,7 +175,7 @@ function ModalAtracao({ atracao, onFechar }) {
                 e.preventDefault();
                 alternarPrevia();
               }}
-              className="text-xs font-bold uppercase tracking-wider underline underline-offset-4 hover:text-terracota-escuro dark:hover:text-terracota"
+              className="text-xs font-bold uppercase tracking-wider underline underline-offset-4 hover:text-terracota-escuro dark:hover:text-terracota-label-dark"
             >
               Link da faixa
             </a>

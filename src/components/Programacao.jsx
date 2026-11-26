@@ -9,7 +9,7 @@ function Programacao() {
     >
       <div className="mx-auto max-w-7xl">
         <div className="mb-8 border-b border-borda-clara pb-6 dark:border-borda-escura">
-          <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota">
+          <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota-label-dark">
             Cronograma Geral
           </p>
           <h2
@@ -30,7 +30,7 @@ function Programacao() {
                 {item.dia}
               </span>
 
-              <span className="font-display tabular-nums text-lg font-extrabold text-terracota-escuro dark:text-terracota sm:col-span-2">
+              <span className="font-display tabular-nums text-lg font-extrabold text-terracota-escuro dark:text-terracota-label-dark sm:col-span-2">
                 {item.horario}
               </span>
 

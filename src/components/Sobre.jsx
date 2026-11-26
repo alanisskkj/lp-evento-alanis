@@ -14,7 +14,7 @@ function Sobre() {
             className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-start"
           >
             <div className="lg:col-span-7">
-              <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota">
+              <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota-label-dark">
                 Manifesto &amp; Território
               </p>
               <h2

@@ -191,7 +191,7 @@ function ModalCheckout({ aberto, setorInicialId, onFechar }) {
 
             <button
               type="submit"
-              className="w-full border border-terracota bg-terracota px-5 py-3 text-xs font-bold uppercase tracking-wider text-grafite transition-colors hover:border-grafite hover:bg-grafite hover:text-papel dark:hover:border-offwhite dark:hover:bg-offwhite dark:hover:text-carvao"
+              className="w-full border border-terracota bg-terracota px-5 py-3 text-xs font-bold uppercase tracking-wider text-papel transition-colors hover:border-grafite hover:bg-grafite dark:hover:border-offwhite dark:hover:bg-offwhite dark:hover:text-carvao"
             >
               Confirmar Reserva Simulada
             </button>

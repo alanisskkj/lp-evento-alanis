@@ -24,7 +24,7 @@ function CartaoAtracao({ atracao, onSelecionar }) {
             {atracao.nome}
           </h3>
 
-          <p className="mt-1 text-xs font-bold uppercase tracking-wider text-terracota-escuro dark:text-terracota">
+          <p className="mt-1 text-xs font-bold uppercase tracking-wider text-terracota-escuro dark:text-terracota-label-dark">
             {atracao.estilo}
           </p>
 

@@ -40,7 +40,7 @@ function Cronometro() {
     >
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-6 px-4 py-8 sm:px-8 lg:flex-row lg:items-center">
         <div>
-          <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota">
+          <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota-label-dark">
             Contagem regressiva
           </p>
           <h2 className="font-display mt-1 text-xl font-extrabold uppercase tracking-tight sm:text-2xl">

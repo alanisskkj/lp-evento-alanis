@@ -17,7 +17,7 @@ function Newsletter() {
       className="border-b border-borda-clara bg-papel px-4 py-16 text-grafite dark:border-borda-escura dark:bg-carvao dark:text-offwhite sm:px-8"
     >
       <div className="mx-auto max-w-2xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota">
+        <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota-label-dark">
           Boletim do Festival
         </p>
         <h2

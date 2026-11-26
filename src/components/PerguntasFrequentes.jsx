@@ -41,7 +41,7 @@ function PerguntasFrequentes() {
       className="border-b border-borda-clara bg-papel px-4 py-16 text-grafite dark:border-borda-escura dark:bg-carvao dark:text-offwhite sm:px-8"
     >
       <div className="mx-auto max-w-4xl">
-        <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota">
+        <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota-label-dark">
           Informações Úteis
         </p>
         <h2
@@ -69,7 +69,7 @@ function PerguntasFrequentes() {
                     <span>{pergunta}</span>
                     <span
                       aria-hidden="true"
-                      className="font-display text-xl font-extrabold text-terracota-escuro dark:text-terracota"
+                      className="font-display text-xl font-extrabold text-terracota-escuro dark:text-terracota-label-dark"
                     >
                       {aberta ? '−' : '+'}
                     </span>

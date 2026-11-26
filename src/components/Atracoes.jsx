@@ -30,7 +30,7 @@ function Atracoes() {
       <div className="mx-auto max-w-7xl">
         <div className="flex flex-col justify-between gap-6 border-b border-borda-clara pb-8 dark:border-borda-escura lg:flex-row lg:items-end">
           <div>
-            <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota">
+            <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota-label-dark">
               Line-up 2027
             </p>
             <h2

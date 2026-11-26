@@ -53,7 +53,7 @@ function Grafico({ tema }) {
     >
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center">
         <div className="lg:col-span-5">
-          <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota">
+          <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota-label-dark">
             Transparência Cultural
           </p>
           <h2

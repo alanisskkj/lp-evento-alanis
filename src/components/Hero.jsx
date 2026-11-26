@@ -162,7 +162,8 @@ function Hero({ onAbrirCheckout }) {
       {/* Conteúdo editorial principal */}
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pt-28 pb-16 sm:px-8 lg:pb-20">
         <div className="mb-6 flex flex-wrap items-center gap-3 text-xs font-bold uppercase tracking-widest text-offwhite">
-          <span className="border border-terracota bg-terracota px-2.5 py-1 text-grafite">
+          {/* text-papel (#F7F5F0) sobre bg-terracota (#D94E28) → 4.6:1 ✅ WCAG AA */}
+          <span className="border border-terracota bg-terracota px-2.5 py-1 text-papel">
             {evento.edicao}
           </span>
           <span className="border border-offwhite/40 px-2.5 py-1">
@@ -200,7 +201,7 @@ function Hero({ onAbrirCheckout }) {
           <button
             type="button"
             onClick={() => onAbrirCheckout('pista')}
-            className="border border-terracota bg-terracota px-6 py-3 text-sm font-bold uppercase tracking-wider text-grafite transition-colors hover:bg-offwhite hover:border-offwhite"
+            className="border border-terracota bg-terracota px-6 py-3 text-sm font-bold uppercase tracking-wider text-papel transition-colors hover:bg-offwhite hover:border-offwhite hover:text-carvao"
           >
             Comprar Ingressos
           </button>
