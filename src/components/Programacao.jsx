@@ -1,32 +1,48 @@
-import { programacao } from '../../data/evento'
+import { programacao } from '../../data/evento';
 
 function Programacao() {
-    return (
-        <section id="programacao" className="py-12 max-w-3xl mx-auto px-4">
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Programação</h2>
+  return (
+    <section
+      id="programacao"
+      aria-labelledby="programacao-titulo"
+      className="border-b border-borda-clara bg-papel px-4 py-16 text-grafite dark:border-borda-escura dark:bg-carvao dark:text-offwhite sm:px-8"
+    >
+      <div className="mx-auto max-w-7xl">
+        <div className="mb-8 border-b border-borda-clara pb-6 dark:border-borda-escura">
+          <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota">
+            Cronograma Geral
+          </p>
+          <h2
+            id="programacao-titulo"
+            className="font-display mt-2 text-3xl font-extrabold uppercase tracking-tight sm:text-4xl"
+          >
+            Programação por Horário
+          </h2>
+        </div>
 
-            <div className="flex flex-col gap-4">
-                {programacao.map((item, index) => (
-                    <div
-                        key={index}
-                        className="bg-indigo-50/40 border border-indigo-100/50 rounded-xl p-6 transition-all hover:bg-indigo-50/70"
-                    >
-                        <span className="block text-sm font-bold text-gray-500 mb-1">
-                            {item.dia} — {item.horario}
-                        </span>
+        <ol className="divide-y divide-borda-clara border border-borda-clara dark:divide-borda-escura dark:border-borda-escura">
+          {programacao.map((item, index) => (
+            <li
+              key={index}
+              className="grid grid-cols-1 gap-2 bg-papel p-4 transition-colors hover:bg-areia dark:bg-carvao dark:hover:bg-chumbo sm:grid-cols-12 sm:items-center sm:gap-4 sm:px-6 sm:py-5"
+            >
+              <span className="text-xs font-bold uppercase tracking-wider text-grafite-suave dark:text-offwhite-suave sm:col-span-3">
+                {item.dia}
+              </span>
 
-                        <h3 className="text-lg font-bold text-gray-900 mb-1">
-                            {item.atividade}
-                        </h3>
+              <span className="font-display tabular-nums text-lg font-extrabold text-terracota-escuro dark:text-terracota sm:col-span-2">
+                {item.horario}
+              </span>
 
-                        <p className="text-gray-600 text-sm">
-                            Apresentação especial no Festival Som da Alta Paulista.
-                        </p>
-                    </div>
-                ))}
-            </div>
-        </section>
-    )
+              <h3 className="font-sans text-base font-bold text-grafite dark:text-offwhite sm:col-span-7">
+                {item.atividade}
+              </h3>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </section>
+  );
 }
 
-export default Programacao
+export default Programacao;

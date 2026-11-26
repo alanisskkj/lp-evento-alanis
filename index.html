@@ -5,9 +5,26 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Festival Som da Alta Paulista 🎶</title>
+  <title>Festival Som da Alta Paulista — Música e Cultura Independente</title>
   <link rel="manifest" href="/manifest.webmanifest" />
-  <meta name="theme-color" content="#1d4ed8" />
+  <meta name="theme-color" content="#F7F5F0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet"
+  />
+  <script>
+    (function () {
+      try {
+        var salvo = localStorage.getItem('tema-festival');
+        var prefereEscuro = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (salvo === 'dark' || (!salvo && prefereEscuro)) {
+          document.documentElement.classList.add('dark');
+        }
+      } catch (e) {}
+    })();
+  </script>
 </head>
 
 <body>

@@ -1,39 +1,100 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
---color-primaria: #5b21b6;
---color-destaque: #9a3412;
---color-fundo: #fff7ed;
+  --font-display: "Syne", system-ui, sans-serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+
+  --color-papel: #F7F5F0;
+  --color-areia: #EAE6DF;
+  --color-grafite: #141413;
+  --color-grafite-suave: #4A4945;
+  --color-borda-clara: #CFC9BE;
+
+  --color-carvao: #121212;
+  --color-chumbo: #1E1E1E;
+  --color-offwhite: #F2EFE9;
+  --color-offwhite-suave: #B5B0A6;
+  --color-borda-escura: #2F2E2B;
+
+  --color-terracota: #D94E28;
+  --color-terracota-escuro: #B53B19;
+  --color-mata: #1E4D3B;
+  --color-mata-clara: #2C6E54;
 }
 
 html {
-scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #F7F5F0;
+  color: #141413;
 }
 
+html.dark {
+  background-color: #121212;
+  color: #F2EFE9;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding-bottom: 5rem;
+  background-color: inherit;
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-display);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Foco visível de alto contraste (WCAG AA) */
 :focus-visible {
-outline: 3px solid #ffffff;
-outline-offset: 2px;
-box-shadow: 0 0 0 6px #111111;
+  outline: 3px solid #D94E28;
+  outline-offset: 2px;
+}
+
+html.dark :focus-visible {
+  outline: 3px solid #F2EFE9;
+  outline-offset: 2px;
 }
 
 .skip-link {
-position: absolute;
-z-index: 50;
-top: 0.75rem;
-left: 0.75rem;
-transform: translateY(-200%);
-background: #ffffff;
-color: #111111;
-padding: 0.75rem 1rem;
-font-weight: 700;
+  position: absolute;
+  z-index: 60;
+  top: 0.75rem;
+  left: 0.75rem;
+  transform: translateY(-200%);
+  background: #141413;
+  color: #F7F5F0;
+  border: 1px solid #F7F5F0;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 .skip-link:focus {
-transform: translateY(0);
+  transform: translateY(0);
 }
 
 @media (prefers-reduced-motion: reduce) {
-html {
-scroll-behavior: auto;
-}
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

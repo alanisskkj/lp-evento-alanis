@@ -1,33 +1,43 @@
-import { sobre } from '../../data/evento'
+import { sobre } from '../../data/evento';
 
 function Sobre() {
   return (
-    <section id="sobre" className="py-20 bg-white px-4">
-      <div className="max-w-3xl mx-auto text-center">
-        
+    <section
+      id="sobre"
+      aria-labelledby="sobre-titulo"
+      className="border-b border-borda-clara bg-papel px-4 py-16 text-grafite dark:border-borda-escura dark:bg-carvao dark:text-offwhite sm:px-8"
+    >
+      <div className="mx-auto max-w-7xl">
         {sobre.map((item, index) => (
-          <div key={index} className="space-y-8">
-            
-            <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl leading-tight">
-              {item.slogam}
-            </h2>
-            
-            <div className="inline-block bg-indigo-50 border border-indigo-100 rounded-full px-6 py-2 shadow-sm">
-              <p className="text-sm md:text-base text-indigo-700 font-bold tracking-wide uppercase">
+          <div
+            key={index}
+            className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-start"
+          >
+            <div className="lg:col-span-7">
+              <p className="text-xs font-bold uppercase tracking-widest text-terracota-escuro dark:text-terracota">
+                Manifesto &amp; Território
+              </p>
+              <h2
+                id="sobre-titulo"
+                className="font-display mt-2 text-3xl font-extrabold uppercase leading-tight tracking-tight sm:text-4xl"
+              >
+                {item.slogam}
+              </h2>
+            </div>
+
+            <div className="border-t border-borda-clara pt-6 dark:border-borda-escura lg:col-span-5 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-8">
+              <p className="inline-block border border-mata bg-mata px-3 py-1 text-xs font-bold uppercase tracking-wider text-papel">
                 {item.numeros}
               </p>
+              <p className="mt-4 text-base leading-relaxed text-grafite-suave dark:text-offwhite-suave">
+                {item.descricao}
+              </p>
             </div>
-            
-            <p className="text-gray-600 text-lg leading-relaxed max-w-2xl mx-auto pt-2">
-              {item.descricao}
-            </p>
-            
           </div>
         ))}
-        
       </div>
     </section>
-  )
+  );
 }
 
-export default Sobre
+export default Sobre;
